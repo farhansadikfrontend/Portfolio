@@ -16,5 +16,6 @@ function eyeAnimation() {
     });
 }
 
+
 // Calls
 eyeAnimation();
