@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 const navLinks = document.querySelectorAll("header nav a");
 const logoLink = document.querySelector("#logo");
 const sections = document.querySelectorAll("section");
@@ -134,4 +131,3 @@ arrowLeft.addEventListener("click", () => {
 
   activeProject();
 });
->>>>>>> 28f8ca0 (Your commit message here)
