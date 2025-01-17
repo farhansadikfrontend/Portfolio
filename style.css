@@ -22,6 +22,7 @@ body {
   font-size: 62.5%;
   color: var(--white-cr);
   background: var(--main-cr);
+  overflow: hidden;
 }
 
 /* Sections */
@@ -33,7 +34,7 @@ section {
   /* background: var(--bg); */
   visibility: hidden;
   opacity: 0;
-  overflow: auto;
+  z-index: 50;
 }
 section.active {
   animation: show_content 2s forwards linear;
@@ -58,6 +59,21 @@ a {
 
 a {
   color: var(--white-cr);
+}
+
+/* Circle  */
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2.4rem;
+  width: 2.4rem;
+  background: var(--main-cr);
+  border-radius: 2.4rem;
+  z-index: 111;
+  pointer-events: none;
+  mix-blend-mode: hard-light;
+  z-index: 500;
 }
 
 header {
@@ -121,6 +137,7 @@ nav a.active {
   height: 100vh;
   width: 100%;
   display: flex;
+  z-index: 1;
 }
 .bars_box .bar {
   width: 100%;
@@ -742,6 +759,10 @@ nav a.active {
 @media screen and (max-width: 1200px) {
   html {
     font-size: 55%;
+  }
+
+  .circle{
+    display: none;
   }
 }
 
